@@ -1,0 +1,28 @@
+body {
+  padding: 24px;
+}
+
+h1 {
+  color: red;
+}
+
+section {
+  & + & {
+    margin-top: 40px;
+  }
+}
+
+h2 + * {
+  margin-top: 16px;
+}
+
+#profile {
+  margin-top: 16px;
+}
+
+#scrollTop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+}

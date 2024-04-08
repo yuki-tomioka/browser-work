@@ -1,0 +1,15 @@
+{
+  "name": "browser-work",
+  "version": "1.0.0",
+  "description": "ブラウザの挙動を確認する",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync start --config \"./bs-config.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}

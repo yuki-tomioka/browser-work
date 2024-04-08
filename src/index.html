@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta
+      name="description"
+      content="ブラウザの挙動を確認するためのページです。"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js//head.js"></script>
+    <style>
+      /* style.cssのh1を上書きしている */
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>挙動確認</h1>
+    <p>これはブラウザの挙動を確認するためのページです。</p>
+    <section>
+      <h2>画像</h2>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1545218553-cdb549f13f8a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <figcaption>灰色の犬の写真</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>APIでGitHubのプロフィールを表示</h2>
+      <div>
+        <label for="gitHubUserName">GitHubユーザー名</label>
+        <input type="text" id="gitHubUserName" value="yuki-tomioka" />
+        <button id="gitHubUserNameButton" type="button">
+          プロフィール取得
+        </button>
+      </div>
+      <h3>取得した情報</h3>
+      <p>認証をしない場合、1時間に60回のリクエスト制限があります。</p>
+      <div id="profile"></div>
+    </section>
+    <button type="button" aria-label="scroll top" id="scrollTop">↑</button>
+    <script src="./js//body.js"></script>
+  </body>
+</html>
