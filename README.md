@@ -8,5 +8,6 @@
 1. Run bellow command.
 
 ```shell
+npm i
 npm run server
 ```
